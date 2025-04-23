@@ -965,9 +965,22 @@ footer {
 
 .categorias-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 25px;
-  padding: 40px 0;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .categorias-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .categorias-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .categoria-card {
@@ -1025,7 +1038,29 @@ footer {
 }
 
 .receitas-grid {
-  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+/* Add responsive breakpoints for smaller screens */
+@media (max-width: 1200px) {
+  .receitas-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .receitas-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .receitas-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .filtros-receitas {
@@ -1125,6 +1160,7 @@ footer {
   .categoria-card h3 {
     font-size: 1rem;
   }
+
   .filtros-receitas {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -1145,17 +1181,18 @@ footer {
   }
   .receitas-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    padding: 0 10px;
+    gap: 20px;
+    padding: 0 1px;
   }
 
   .receita-card {
     width: 100%;
-    margin-bottom: 15px;
+    max-width: 500px;
+
   }
 
   .receita-img {
-    height: 130px;
+    height: 300px;
   }
 
   .receita-info {
