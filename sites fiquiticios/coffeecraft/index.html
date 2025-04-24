@@ -3,48 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CoffeeCraft - Cafés Artesanais de Origem</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
+    <title>Sabor Natural - Receitas Deliciosas</title>
+    <link rel="stylesheet" href="css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/favicon/apple-touch-icon.png"
-    />
-    <link rel="icon" type="image/png" sizes="32x32" href="img/logo.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="img/logo.png" />
-    <link rel="manifest" href="assets/favicon/site.webmanifest" />
   </head>
   <body>
-    <!-- Loading Screen -->
-    <div class="loading-screen">
-      <div class="loader">
-        <div class="spinner"></div>
-      </div>
-    </div>
-
-    <!-- Header e Navegação -->
-    <header class="header">
-      <div class="container">
-        <div class="logo">
-          <img src="img/logo.png" alt="CoffeeCraft Logo" />
-        </div>
-        <nav class="main-nav">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li><a href="#catalog">Catálogo</a></li>
-            <li><a href="#testimonials">Depoimentos</a></li>
-            <li><a href="#subscription">Assinatura</a></li>
+    <header>
+      <div class="container header-container">
+        <a href="#" class="logo">
+          <i class="fas fa-leaf"></i>
+          Sabor Natural
+        </a>
+        <nav class="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+            <li class="nav-item"><a href="receitas.html" class="nav-link">Receitas</a></li>
+            <li class="nav-item"><a href="index.html#blog" class="nav-link">Blog</a></li>
+            <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Cadastrar</a></li>
           </ul>
         </nav>
         <div class="menu-toggle">
@@ -53,425 +33,255 @@
       </div>
     </header>
 
-    <!-- Hero Banner -->
-    <section id="home" class="hero">
-      <div class="hero-overlay"></div>
-      <div class="hero-background">
-        <img
-          src="img/banner.jpg"
-          alt="Grãos de café premium"
-          class="hero-image"
+    <main>
+      <section class="banner-section">
+        <div class="banner-content">
+          <h1>Descubra o Prazer de Cozinhar</h1>
+          <p>
+            Explore nossas receitas deliciosas e aprenda a preparar pratos
+            incríveis
+          </p>
+          <a href="receitas.html" class="btn">Explorar Receitas</a>
+        </div>
+      </section>
+
+      <div class="search-container container">
+        <input
+          type="text"
+          class="search-bar"
+          placeholder="Busque por receitas, ingredientes..."
         />
+        <button class="search-btn">
+          <i class="fas fa-search"></i>
+        </button>
       </div>
-      <div class="hero-content">
-        <h1>CoffeeCraft – Cafés Artesanais de Origem</h1>
-        <h2>Da fazenda à sua xícara</h2>
-        <div class="hero-buttons">
-          <a href="#catalog"><button class="cta-button primary">Conheça Nossas Torrefações</button></a>
-          <a href="#subscription"><button class="cta-button secondary">Assine Agora</button></a>
-        </div>
-      </div>
-    </section>
 
-    <!-- Nossas Prioridades -->
-    <section class="priorities">
-      <div class="container">
-        <h2 class="section-title">Nossas Prioridades</h2>
-        <div class="priorities-grid">
-          <div class="priority-item" data-aos="fade-up">
-            <div class="icon">
-              <i class="fas fa-leaf"></i>
-            </div>
-            <h3>Qualidade de Origem</h3>
-            <p>
-              Selecionamos apenas os melhores grãos de produtores certificados,
-              garantindo sabor excepcional.
-            </p>
+      <section class="receitas-section">
+        <div class="container">
+          <div class="secao-titulo">
+            <h2>Receitas em Destaque</h2>
+            <p>As receitas mais populares da semana</p>
           </div>
-          <div class="priority-item" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon">
-              <i class="fas fa-fire"></i>
-            </div>
-            <h3>Torrefação Precisa</h3>
-            <p>
-              Cada lote é torrado com precisão para realçar as características
-              únicas de cada origem.
-            </p>
-          </div>
-          <div class="priority-item" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon">
-              <i class="fas fa-truck"></i>
-            </div>
-            <h3>Entrega Rápida</h3>
-            <p>
-              Seu café chega em até 48h após a torrefação, garantindo frescor e
-              aroma incomparáveis.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Sobre a Empresa -->
-    <section id="about" class="about">
-      <div class="container">
-        <div class="about-content">
-          <div class="about-text" data-aos="fade-right">
-            <h2 class="section-title">Sobre a Empresa</h2>
-            <p>
-              A CoffeeCraft nasceu da paixão por cafés excepcionais. Fundada em
-              2015, nossa missão é conectar amantes de café a experiências
-              sensoriais únicas através de grãos cuidadosamente selecionados e
-              torrados artesanalmente.
-            </p>
-            <p>
-              Trabalhamos diretamente com pequenos produtores, garantindo
-              práticas sustentáveis e remuneração justa. Cada blend é
-              desenvolvido para destacar as características naturais dos grãos,
-              criando perfis de sabor memoráveis.
-            </p>
-            <p>
-              Nossa equipe de especialistas é liderada pelo mestre-torrista
-              Carlos Mendes, com mais de 20 anos de experiência e certificação
-              Q-Grader.
-            </p>
-          </div>
-          <div class="about-image" data-aos="fade-left">
-            <img src="img/sobre nos.jpg" alt="Mestre-torrista da CoffeeCraft" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Catálogo de Blends -->
-    <section id="catalog" class="catalog">
-      <div class="container">
-        <h2 class="section-title">Catálogo de Blends</h2>
-        <div class="catalog-grid">
-          <div class="coffee-item" data-aos="fade-up">
-            <div class="coffee-image">
-              <img src="img/montanha_dourada.jpg" alt="Café Montanha Dourada" />
-            </div>
-            <div class="coffee-info">
-              <h3>Montanha Dourada</h3>
-              <p>Notas de chocolate amargo, caramelo e frutas vermelhas.</p>
-              <button class="more-info-btn" data-coffee="montanha-dourada">
-                Saiba Mais
-              </button>
-            </div>
-          </div>
-          <div class="coffee-item" data-aos="fade-up" data-aos-delay="100">
-            <div class="coffee-image">
-              <img src="img/amanhecer.jpg" alt="Café Amanhecer" />
-            </div>
-            <div class="coffee-info">
-              <h3>Amanhecer</h3>
-              <p>
-                Notas cítricas, floral com toque de mel e finalização limpa.
-              </p>
-              <button class="more-info-btn" data-coffee="amanhecer">
-                Saiba Mais
-              </button>
-            </div>
-          </div>
-          <div class="coffee-item" data-aos="fade-up" data-aos-delay="200">
-            <div class="coffee-image">
-              <img src="img/reserva especial.jpg" alt="Café Reserva Especial" />
-            </div>
-            <div class="coffee-info">
-              <h3>Reserva Especial</h3>
-              <p>Notas de amêndoas, caramelo e finalização prolongada.</p>
-              <button class="more-info-btn" data-coffee="reserva-especial">
-                Saiba Mais
-              </button>
-            </div>
-          </div>
-          <div class="coffee-item" data-aos="fade-up">
-            <div class="coffee-image">
-              <img src="img/organico.jpg" alt="Café Orgânico" />
-            </div>
-            <div class="coffee-info">
-              <h3>Orgânico</h3>
-              <p>Notas de frutas amarelas, corpo médio e acidez equilibrada.</p>
-              <button class="more-info-btn" data-coffee="organico">
-                Saiba Mais
-              </button>
-            </div>
-          </div>
-          <div class="coffee-item" data-aos="fade-up" data-aos-delay="100">
-            <div class="coffee-image">
-              <img src="img/csfr raro.jpg" alt="Café Bourbon Vermelho" />
-            </div>
-            <div class="coffee-info">
-              <h3>Bourbon Vermelho</h3>
-              <p>Notas de chocolate ao leite, nozes e toque de cereja.</p>
-              <button class="more-info-btn" data-coffee="bourbon-vermelho">
-                Saiba Mais
-              </button>
-            </div>
-          </div>
-          <div class="coffee-item" data-aos="fade-up" data-aos-delay="200">
-            <div class="coffee-image">
-              <img src="img/cafe brasil.jpg" alt="Café Cerrado Mineiro" />
-            </div>
-            <div class="coffee-info">
-              <h3>Cerrado Mineiro</h3>
-              <p>Notas de caramelo, rapadura e finalização suave.</p>
-              <button class="more-info-btn" data-coffee="cerrado-mineiro">
-                Saiba Mais
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Modal para detalhes do café -->
-    <div class="modal" id="coffee-modal">
-      <div class="modal-content">
-        <span class="close-modal">&times;</span>
-        <div class="modal-body">
-          <!-- Conteúdo preenchido via JavaScript -->
-        </div>
-      </div>
-    </div>
-
-    <!-- Depoimentos -->
-    <section id="testimonials" class="testimonials">
-      <div class="container">
-        <h2 class="section-title">O que nossos clientes dizem</h2>
-        <div class="testimonial-slider">
-          <div class="slider-container">
-            <div class="testimonial-slide">
-              <div class="testimonial-content">
-                <div class="testimonial-image">
-                  <img src="img/ana.jpg" alt="Cliente Ana Silva" />
+          <div class="receitas-grid">
+            <!-- Repetir para cada receita -->
+            <a href="receita-individual.html" class="receita-card">
+              <div class="receita-img">
+                <img src="https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Receita"/>
+              </div>
+              <div class="receita-info">
+                <span class="receita-categoria">Vegetariano</span>
+                <h3 class="receita-titulo">Salada Primavera</h3>
+                <div class="receita-meta">
+                  <span><i class="far fa-clock"></i> 30 min</span>
+                  <span><i class="far fa-user"></i> 4 porções</span>
                 </div>
-                <div class="testimonial-text">
-                  <p>
-                    "Desde que descobri a CoffeeCraft, meus dias começam muito
-                    melhor. A qualidade e o sabor são incomparáveis!"
-                  </p>
-                  <h4>Ana Silva</h4>
-                  <p class="testimonial-role">Barista profissional</p>
+                <div class="receita-autor">
+                  <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Autor"/>
+                  <span>Maria Silva</span>
                 </div>
               </div>
-            </div>
-            <div class="testimonial-slide">
-              <div class="testimonial-content">
-                <div class="testimonial-image">
-                  <img src="img/marcos.jpg" alt="Cliente Marcos Oliveira" />
+            </a>
+            <a href="receita-individual.html" class="receita-card">
+              <div class="receita-img">
+                <img src="https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Receita"/>
+              </div>
+              <div class="receita-info">
+                <span class="receita-categoria">Vegetariano</span>
+                <h3 class="receita-titulo">Salada Primavera</h3>
+                <div class="receita-meta">
+                  <span><i class="far fa-clock"></i> 30 min</span>
+                  <span><i class="far fa-user"></i> 4 porções</span>
                 </div>
-                <div class="testimonial-text">
-                  <p>
-                    "A assinatura mensal da CoffeeCraft transformou minha
-                    experiência com café. Cada mês é uma nova descoberta
-                    sensorial."
-                  </p>
-                  <h4>Marcos Oliveira</h4>
-                  <p class="testimonial-role">Entusiasta de café</p>
+                <div class="receita-autor">
+                  <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Autor"/>
+                  <span>Maria Silva</span>
                 </div>
               </div>
-            </div>
-            <div class="testimonial-slide">
-              <div class="testimonial-content">
-                <div class="testimonial-image">
-                  <img src="img/carla.jpg" alt="Cliente Carla Mendes" />
+            </a>
+            <a href="receita-individual.html" class="receita-card">
+              <div class="receita-img">
+                <img src="https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Receita"/>
+              </div>
+              <div class="receita-info">
+                <span class="receita-categoria">Vegetariano</span>
+                <h3 class="receita-titulo">Salada Primavera</h3>
+                <div class="receita-meta">
+                  <span><i class="far fa-clock"></i> 30 min</span>
+                  <span><i class="far fa-user"></i> 4 porções</span>
                 </div>
-                <div class="testimonial-text">
-                  <p>
-                    "O compromisso com a qualidade e sustentabilidade faz toda a
-                    diferença. Além do sabor excepcional, sei que estou apoiando
-                    produtores responsáveis."
-                  </p>
-                  <h4>Carla Mendes</h4>
-                  <p class="testimonial-role">Chef de cozinha</p>
+                <div class="receita-autor">
+                  <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Autor"/>
+                  <span>Maria Silva</span>
                 </div>
               </div>
-            </div>
+            </a>
+            <a href="receita-individual.html" class="receita-card">
+              <div class="receita-img">
+                <img src="https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Receita"/>
+              </div>
+              <div class="receita-info">
+                <span class="receita-categoria">Vegetariano</span>
+                <h3 class="receita-titulo">Salada Primavera</h3>
+                <div class="receita-meta">
+                  <span><i class="far fa-clock"></i> 30 min</span>
+                  <span><i class="far fa-user"></i> 4 porções</span>
+                </div>
+                <div class="receita-autor">
+                  <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Autor"/>
+                  <span>Maria Silva</span>
+                </div>
+              </div>
+            </a>
+            <!-- Fim da receita -->
           </div>
-          <div class="slider-controls">
-            <button class="prev-slide">
-              <i class="fas fa-chevron-left"></i>
-            </button>
-            <div class="slider-dots">
-              <span class="dot active"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-            </div>
-            <button class="next-slide">
-              <i class="fas fa-chevron-right"></i>
-            </button>
+          <div class="ver-mais">
+            <a href="receitas.html" class="btn">Ver Mais Receitas</a>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Assinatura -->
-    <section id="subscription" class="subscription">
-      <div class="container">
-        <div class="subscription-content">
-          <div class="subscription-text" data-aos="fade-right">
-            <h2 class="section-title">Assine Nossa Caixa Mensal</h2>
-            <p>
-              Receba mensalmente uma seleção exclusiva dos nossos melhores
-              cafés, torrados especialmente para você. Cada caixa contém dois
-              pacotes de 250g de blends diferentes, além de um guia de
-              degustação e brindes surpresa.
-            </p>
-            <ul class="subscription-benefits">
-              <li>
-                <i class="fas fa-check"></i> Café sempre fresco, torrado na
-                semana do envio
-              </li>
-              <li>
-                <i class="fas fa-check"></i> Descubra novos sabores todos os
-                meses
-              </li>
-              <li>
-                <i class="fas fa-check"></i> Frete grátis para todo o Brasil
-              </li>
-              <li>
-                <i class="fas fa-check"></i> Cancele quando quiser, sem multa
-              </li>
-            </ul>
+      <section id="blog" class="blog-section">
+        <div class="container">
+          <div class="secao-titulo">
+            <h2>Blog Culinário</h2>
+            <p>Dicas, truques e novidades do mundo da gastronomia</p>
           </div>
-          <div class="subscription-form" data-aos="fade-left">
-            <form id="subscription-form">
-              <div class="form-group">
-                <label for="name">Nome completo</label>
-                <input type="text" id="name" name="name" required />
+          <div class="blog-grid">
+            <!-- Repetir para cada post -->
+            <article class="blog-card">
+              <div class="blog-img">
+                <img
+                  src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                  alt="Blog"
+                />
               </div>
-              <div class="form-group">
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" required />
+              <div class="blog-info">
+                <span class="blog-data">12 de Julho, 2023</span>
+                <h3 class="blog-titulo">10 Dicas para Cozinhar Melhor</h3>
+                <p class="blog-resumo">
+                  Aprenda técnicas essenciais que vão transformar sua
+                  experiência na cozinha.
+                </p>
+                <a href="#" class="blog-link"
+                  >Ler mais <i class="fas fa-arrow-right"></i
+                ></a>
               </div>
-              <div class="form-group">
-                <label>Selecione seus blends preferidos</label>
-                <div class="checkbox-group">
-                  <label class="checkbox-label">
-                    <input
-                      type="checkbox"
-                      name="blends"
-                      value="montanha-dourada"
-                    />
-                    Montanha Dourada
-                  </label>
-                  <label class="checkbox-label">
-                    <input type="checkbox" name="blends" value="amanhecer" />
-                    Amanhecer
-                  </label>
-                  <label class="checkbox-label">
-                    <input
-                      type="checkbox"
-                      name="blends"
-                      value="reserva-especial"
-                    />
-                    Reserva Especial
-                  </label>
-                  <label class="checkbox-label">
-                    <input type="checkbox" name="blends" value="organico" />
-                    Orgânico
-                  </label>
-                  <label class="checkbox-label">
-                    <input
-                      type="checkbox"
-                      name="blends"
-                      value="bourbon-vermelho"
-                    />
-                    Bourbon Vermelho
-                  </label>
-                  <label class="checkbox-label">
-                    <input
-                      type="checkbox"
-                      name="blends"
-                      value="cerrado-mineiro"
-                    />
-                    Cerrado Mineiro
-                  </label>
-                </div>
+            </article>
+            <article class="blog-card">
+              <div class="blog-img">
+                <img
+                  src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                  alt="Blog"
+                />
               </div>
-              <button type="submit" class="cta-button">Assinar Agora</button>
+              <div class="blog-info">
+                <span class="blog-data">12 de Julho, 2023</span>
+                <h3 class="blog-titulo">10 Dicas para Cozinhar Melhor</h3>
+                <p class="blog-resumo">
+                  Aprenda técnicas essenciais que vão transformar sua
+                  experiência na cozinha.
+                </p>
+                <a href="#" class="blog-link"
+                  >Ler mais <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </article>
+            <article class="blog-card">
+              <div class="blog-img">
+                <img
+                  src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                  alt="Blog"
+                />
+              </div>
+              <div class="blog-info">
+                <span class="blog-data">12 de Julho, 2023</span>
+                <h3 class="blog-titulo">10 Dicas para Cozinhar Melhor</h3>
+                <p class="blog-resumo">
+                  Aprenda técnicas essenciais que vão transformar sua
+                  experiência na cozinha.
+                </p>
+                <a href="#" class="blog-link"
+                  >Ler mais <i class="fas fa-arrow-right"></i
+                ></a>
+              </div>
+            </article>
+            <!-- Fim do post -->
+          </div>
+        </div>
+      </section>
+
+      <section class="inscricao-section">
+        <div class="container">
+          <div class="inscricao-content">
+            <h2>Receba Nossas Novidades</h2>
+            <p>
+              Inscreva-se para receber as melhores receitas e dicas culinárias
+              diretamente no seu e-mail.
+            </p>
+            <form class="inscricao-form">
+              <input
+                type="email"
+                class="inscricao-input"
+                placeholder="Seu melhor e-mail"
+              />
+              <button type="submit" class="inscricao-btn">Inscrever-se</button>
             </form>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <footer>
       <div class="container">
-        <div class="footer-content">
-          <div class="footer-column">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h3>Sobre Nós</h3>
             <p>
-              Cafés artesanais de origem, torrados com paixão e expertise para
-              uma experiência sensorial única.
+              O Sabor Natural é dedicado a compartilhar receitas deliciosas e
+              saudáveis para todos os amantes da boa gastronomia.
             </p>
-          </div>
-          <div class="footer-column">
-            <h3>Navegação</h3>
-            <ul class="footer-links">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">Sobre</a></li>
-              <li><a href="#catalog">Catálogo</a></li>
-              <li><a href="#testimonials">Depoimentos</a></li>
-              <li><a href="#subscription">Assinatura</a></li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h3>Contato</h3>
-            <ul class="contact-info">
-              <li>
-                <i class="fas fa-map-marker-alt"></i> Rua do Café, 123 - São
-                Paulo, SP
-              </li>
-              <li><i class="fas fa-phone"></i> (11) 5555-1234</li>
-              <li>
-                <i class="fas fa-envelope"></i> contato@coffeecraft.com.br
-              </li>
-            </ul>
             <div class="social-links">
-              <a href="#" aria-label="Facebook"
-                ><i class="fab fa-facebook-f"></i
-              ></a>
-              <a href="#" aria-label="Instagram"
-                ><i class="fab fa-instagram"></i
-              ></a>
-              <a href="#" aria-label="Twitter"
-                ><i class="fab fa-twitter"></i
-              ></a>
-              <a href="#" aria-label="YouTube"
-                ><i class="fab fa-youtube"></i
-              ></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-pinterest"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
             </div>
           </div>
-          <div class="footer-column">
-            <h3>Newsletter</h3>
-            <p>Receba novidades, promoções e dicas sobre café.</p>
-            <form class="newsletter-form">
-              <input type="email" placeholder="Seu e-mail" required />
-              <button type="submit"><i class="fas fa-paper-plane"></i></button>
-            </form>
+          <div class="footer-col">
+            <h3>Links Úteis</h3>
+            <ul class="footer-links">
+              <li><a href="#">Sobre Nós</a></li>
+              <li><a href="#">Receitas</a></li>
+              <li><a href="index.html#blog">Blog</a></li>
+              <li><a href="#">Contato</a></li>
+              <li><a href="#">Política de Privacidade</a></li>
+            </ul>
           </div>
-        </div>
-        <div class="footer-map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1976900292297!2d-46.6585336!3d-23.5646162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzUyLjUiUyA0NsKwMzknMzAuNyJX!5e0!3m2!1spt-BR!2sbr!4v1625764215694!5m2!1spt-BR!2sbr"
-            width="100%"
-            height="200"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-          ></iframe>
+          <div class="footer-col">
+            <h3>Categorias</h3>
+            <ul class="footer-links">
+              <li><a href="#">Café da Manhã</a></li>
+              <li><a href="#">Almoço</a></li>
+              <li><a href="#">Jantar</a></li>
+              <li><a href="#">Sobremesas</a></li>
+              <li><a href="#">Vegetariano</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Contato</h3>
+            <ul class="footer-links">
+              <li><i class="fas fa-phone"></i> (11) 99999-9999</li>
+              <li><i class="fas fa-envelope"></i> contato@sabornatural.com</li>
+              <li><i class="fas fa-map-marker-alt"></i> São Paulo, SP</li>
+            </ul>
+          </div>
         </div>
         <div class="footer-bottom">
-          <p>&copy; 2025 Jonathan R. K. Todos os direitos reservados.</p>
+          <p>&copy; 2025 Jonathan R. Kalinoski. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
