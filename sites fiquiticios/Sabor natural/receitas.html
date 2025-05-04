@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Receitas - Sabor Natural</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container header-container">
+        <a href="index.html" class="logo">
+          <i class="fas fa-leaf"></i>
+          Sabor Natural
+        </a>
+        <nav class="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Início</a>
+            </li>
+            <li class="nav-item">
+              <a href="receitas.html" class="nav-link">Receitas</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html#blog" class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="sobre.html" class="nav-link">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a href="contato.html" class="nav-link">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a href="cadastro.html" class="nav-link">Cadastrar</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="banner-section">
+        <div class="banner-content">
+          <h1>Nossas Receitas</h1>
+          <p>Explore nossa coleção completa de receitas deliciosas</p>
+        </div>
+      </section>
+
+      <div class="search-container container">
+        <input
+          type="text"
+          class="search-bar"
+          placeholder="Busque por receitas, ingredientes..."
+        />
+        <button class="search-btn">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+
+      <section class="categorias-section">
+        <div class="container">
+          <div class="secao-titulo">
+            <h2>Categorias</h2>
+            <p>Escolha sua categoria favorita</p>
+          </div>
+          <div class="categorias-grid">
+            <a href="#" class="categoria-card">
+              <i class="fas fa-coffee"></i>
+              <h3>Café da Manhã</h3>
+            </a>
+            <a href="#" class="categoria-card">
+              <i class="fas fa-hamburger"></i>
+              <h3>Almoço</h3>
+            </a>
+            <a href="#" class="categoria-card">
+              <i class="fas fa-utensils"></i>
+              <h3>Jantar</h3>
+            </a>
+            <a href="#" class="categoria-card">
+              <i class="fas fa-ice-cream"></i>
+              <h3>Sobremesas</h3>
+            </a>
+            <a href="#" class="categoria-card">
+              <i class="fas fa-seedling"></i>
+              <h3>Vegetariano</h3>
+            </a>
+            <a href="#" class="categoria-card">
+              <i class="fas fa-bread-slice"></i>
+              <h3>Lanches</h3>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="receitas-section">
+        <div class="container">
+          <div class="secao-titulo">
+            <h2>Receitas</h2>
+            <p>Descubra nossa coleção completa de receitas</p>
+          </div>
+          <div class="filtros-receitas">
+            <div class="filtro-categoria">
+              <button class="filtro-btn ativo">Todas as receitas</button>
+          </div>
+          <div class="receitas-grid">
+            <!-- Card de Receita -->
+            <a href="omelete-queijo-tomate.html" class="receita-card">
+              <div class="receita-img">
+                <img src="img/omelete-1-jpg.webp" alt="Receita" />
+              </div>
+              <div class="receita-info">
+                <span class="receita-categoria">Café da Manhã</span>
+                <h3 class="receita-titulo">Omelete de Queijo e Tomate</h3>
+                <div class="receita-meta">
+                  <span><i class="far fa-clock"></i> 10 min</span>
+                  <span><i class="far fa-user"></i> 1 pessoa</span>
+                </div>
+                <div class="receita-autor">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    alt="Autor"
+                  />
+                  <span>Maria Silva</span>
+                </div>
+              </div>
+            </a>
+            <a href="panqueca-integral-bnn.html" class="receita-card">
+              <div class="receita-img">
+                <img src="img/PANQUECA-DE-BANANA.webp" alt="Receita" />
+              </div>
+              <div class="receita-info">
+                <span class="receita-categoria">Café da Manhã</span>
+                <h3 class="receita-titulo">Panqueca Integral de Banana</h3>
+                <div class="receita-meta">
+                  <span><i class="far fa-clock"></i> 20 min</span>
+                  <span><i class="far fa-user"></i> 2 pessoas</span>
+                </div>
+                <div class="receita-autor">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    alt="Autor"
+                  />
+                  <span>Maria Silva</span>
+                </div>
+              </div>
+            </a>
+            <a href="tapioca-coco-condesado.html" class="receita-card">
+              <div class="receita-img">
+                <img src="img/tapioca-coco.jpg" alt="Receita" />
+              </div>
+              <div class="receita-info">
+                <span class="receita-categoria">Café da Manhã</span>
+                <h3 class="receita-titulo">
+                  Tapioca de coco com leite condensado
+                </h3>
+                <div class="receita-meta">
+                  <span><i class="far fa-clock"></i> 10 min</span>
+                  <span><i class="far fa-user"></i> 1 pessoa</span>
+                </div>
+                <div class="receita-autor">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    alt="Autor"
+                  />
+                  <span>Maria Silva</span>
+                </div>
+              </div>
+            </a>
+            <a href="Iogurte-frutaseGranola.html" class="receita-card">
+              <div class="receita-img">
+                <img src="img/iogurte-frutaegranola.png" alt="Receita" />
+              </div>
+              <div class="receita-info">
+                <span class="receita-categoria">Café da Manhã</span>
+                <h3 class="receita-titulo">Iogurte com Frutas e Granola</h3>
+                <div class="receita-meta">
+                  <span><i class="far fa-clock"></i> 5 min</span>
+                  <span><i class="far fa-user"></i> 1 pessoa</span>
+                </div>
+                <div class="receita-autor">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    alt="Autor"
+                  />
+                  <span>Maria Silva</span>
+                </div>
+              </div>
+            </a>
+            <a href="pão-de-queijo.html" class="receita-card">
+              <div class="receita-img">
+                <img src="img/pao-queijo-frigideira.jpg" alt="Receita" />
+              </div>
+              <div class="receita-info">
+                <span class="receita-categoria">Café da Manhã</span>
+                <h3 class="receita-titulo">Pão de Queijo de Frigideira</h3>
+                <div class="receita-meta">
+                  <span><i class="far fa-clock"></i> 15 min</span>
+                  <span><i class="far fa-user"></i> 2 pessoas</span>
+                </div>
+                <div class="receita-autor">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    alt="Autor"
+                  />
+                  <span>Maria Silva</span>
+                </div>
+              </div>
+            </a>
+            <a href="frango-arroz-brocolis.html" class="receita-card">
+              <div class="receita-img">
+                <img src="img/frango-arroz-e-brocolis.jpg" alt="Receita" />
+              </div>
+              <div class="receita-info">
+                <span class="receita-categoria">Almoço</span>
+                <h3 class="receita-titulo">
+                  Frango Grelhado com Arroz e Brócolis
+                </h3>
+                <div class="receita-meta">
+                  <span><i class="far fa-clock"></i> 30 min</span>
+                  <span><i class="far fa-user"></i> 2 pessoas</span>
+                </div>
+                <div class="receita-autor">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    alt="Autor"
+                  />
+                  <span>Maria Silva</span>
+                </div>
+              </div>
+            </a>
+            <a href="strogonoff-de-carne.html" class="receita-card">
+              <div class="receita-img">
+                <img
+                  src="img/strogonoff-de-carne-arroz-de-batata-palha.avif"
+                  alt="Strogonoff de Carne com Arroz e Batata Palha"
+                />
+              </div>
+              <div class="receita-info">
+                <span class="receita-categoria">Almoço</span>
+                <h3 class="receita-titulo">
+                  Strogonoff de Carne com Arroz e Batata Palha
+                </h3>
+                <div class="receita-meta">
+                  <span><i class="far fa-clock"></i> 40 min</span>
+                  <span><i class="far fa-user"></i> 3 pessoas</span>
+                </div>
+                <div class="receita-autor">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    alt="Autor"
+                  />
+                  <span>Maria Silva</span>
+                </div>
+              </div>
+            </a>
+            <a href="lasanha-abobrinha-ricota.html" class="receita-card">
+              <div class="receita-img">
+                <img
+                  src="img/lasanha-com-abobrinha-ricota.jpg"
+                  alt="Lasanha de Abobrinha com Ricota"
+                />
+              </div>
+              <div class="receita-info">
+                <span class="receita-categoria">Almoço</span>
+                <h3 class="receita-titulo">Lasanha de Abobrinha com Ricota</h3>
+                <div class="receita-meta">
+                  <span><i class="far fa-clock"></i> 50 min</span>
+                  <span><i class="far fa-user"></i> 4 pessoas</span>
+                </div>
+                <div class="receita-autor">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    alt="Autor"
+                  />
+                  <span>Maria Silva</span>
+                </div>
+              </div>
+            </a>
+            <a href="peixe-assado-legumes.html" class="receita-card">
+              <div class="receita-img">
+                <img src="img/peixe-assado-com-legumes-1.jpeg" alt="Receita" />
+              </div>
+              <div class="receita-info">
+                <span class="receita-categoria">Almoço</span>
+                <h3 class="receita-titulo">Peixe Assado com Legumes</h3>
+                <div class="receita-meta">
+                  <span><i class="far fa-clock"></i> 45 min</span>
+                  <span><i class="far fa-user"></i> 3 pessoas</span>
+                </div>
+                <div class="receita-autor">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    alt="Autor"
+                  />
+                  <span>Maria Silva</span>
+                </div>
+              </div>
+            </a>
+            <a
+              href="macarrao-penne-molho-tomate-manjericao.html"
+              class="receita-card"
+            >
+              <div class="receita-img">
+                <img
+                  src="img/macarrao-penne-com-molho-de-tomate.avif"
+                  alt="Macarrão Penne ao Molho de Tomate com Manjericão"
+                />
+              </div>
+              <div class="receita-info">
+                <span class="receita-categoria">Almoço</span>
+                <h3 class="receita-titulo">
+                  Macarrão Penne ao Molho de Tomate com Manjericão
+                </h3>
+                <div class="receita-meta">
+                  <span><i class="far fa-clock"></i> 25 min</span>
+                  <span><i class="far fa-user"></i> 2 pessoas</span>
+                </div>
+                <div class="receita-autor">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    alt="Autor"
+                  />
+                  <span>Maria Silva</span>
+                </div>
+              </div>
+            </a>
+            <a href="sopa-abobora-gengibre.html" class="receita-card">
+              <div class="receita-img">
+                <img
+                  src="img/sopa-abobora-cremosa.webp"
+                  alt="Sopa Cremosa de Abóbora com Gengibre"
+                />
+              </div>
+              <div class="receita-info">
+                <span class="receita-categoria">Jantar</span>
+                <h3 class="receita-titulo">
+                  Sopa Cremosa de Abóbora com Gengibre
+                </h3>
+                <div class="receita-meta">
+                  <span><i class="far fa-clock"></i> 35 min</span>
+                  <span><i class="far fa-user"></i> 3 pessoas</span>
+                </div>
+                <div class="receita-autor">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    alt="Autor"
+                  />
+                  <span>Maria Silva</span>
+                </div>
+              </div>
+            </a>
+            <a href="omelete-espinafre-queijo.html" class="receita-card">
+              <div class="receita-img">
+                <img src="img/omelete-de-espinafre.jpeg" alt="Receita" />
+              </div>
+              <div class="receita-info">
+                <span class="receita-categoria">Jantar</span>
+                <h3 class="receita-titulo">Omelete de Espinafre com Queijo</h3>
+                <div class="receita-meta">
+                  <span><i class="far fa-clock"></i> 15 min</span>
+                  <span><i class="far fa-user"></i> 2 pessoas</span>
+                </div>
+                <div class="receita-autor">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    alt="Autor"
+                  />
+                  <span>Maria Silva</span>
+                </div>
+              </div>
+            </a>
+            <a href="quinoa-legumes-salteados.html" class="receita-card">
+              <div class="receita-img">
+                <img
+                  src="img/salada-quinoa-legumes.webp"
+                  alt="Quinoa com Legumes Salteados"
+                />
+              </div>
+              <div class="receita-info">
+                <span class="receita-categoria">Jantar</span>
+                <h3 class="receita-titulo">Quinoa com Legumes Salteados</h3>
+                <div class="receita-meta">
+                  <span><i class="far fa-clock"></i> 30 min</span>
+                  <span><i class="far fa-user"></i> 2 pessoas</span>
+                </div>
+                <div class="receita-autor">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    alt="Autor"
+                  />
+                  <span>Maria Silva</span>
+                </div>
+              </div>
+            </a>
+            <a href="panqueca-frango-requeijao.html" class="receita-card">
+              <div class="receita-img">
+                <img
+                  src="img/panqueca-frango-requeijão.webp"
+                  alt="Panqueca de Frango com Requeijão"
+                />
+              </div>
+              <div class="receita-info">
+                <span class="receita-categoria">Jantar</span>
+                <h3 class="receita-titulo">Panqueca de Frango com Requeijão</h3>
+                <div class="receita-meta">
+                  <span><i class="far fa-clock"></i> 40 min</span>
+                  <span><i class="far fa-user"></i> 3 pessoas</span>
+                </div>
+                <div class="receita-autor">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    alt="Autor"
+                  />
+                  <span>Maria Silva</span>
+                </div>
+              </div>
+            </a>
+            <a href="risoto-cogumelos.html" class="receita-card">
+              <div class="receita-img">
+                <img src="img/risoto-cogumelo.webp" alt="Risoto de Cogumelos" />
+              </div>
+              <div class="receita-info">
+                <span class="receita-categoria">Jantar</span>
+                <h3 class="receita-titulo">Risoto de Cogumelos</h3>
+                <div class="receita-meta">
+                  <span><i class="far fa-clock"></i> 35 min</span>
+                  <span><i class="far fa-user"></i> 2 pessoas</span>
+                </div>
+                <div class="receita-autor">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    alt="Autor"
+                  />
+                  <span>Maria Silva</span>
+                </div>
+              </div>
+            </a>
+            <a href="mousse-maracuja.html" class="receita-card">
+              <div class="receita-img">
+                <img src="img/mousse-maracuja.webp" alt="Mousse de Maracujá" />
+              </div>
+              <div class="receita-info">
+                <span class="receita-categoria">Sobremesas</span>
+                <h3 class="receita-titulo">Mousse de Maracujá</h3>
+                <div class="receita-meta">
+                  <span
+                    ><i class="far fa-clock"></i> 15 min (+2h geladeira)</span
+                  >
+                  <span><i class="far fa-user"></i> 4 pessoas</span>
+                </div>
+                <div class="receita-autor">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    alt="Autor"
+                  />
+                  <span>Maria Silva</span>
+                </div>
+              </div>
+            </a>
+            <a href="brigadeiro-tradicional.html" class="receita-card">
+              <div class="receita-img">
+                <img
+                  src="img/brigadeiro-tradicional.jpg"
+                  alt="Brigadeiro Tradicional"
+                />
+              </div>
+              <div class="receita-info">
+                <span class="receita-categoria">Sobremesas</span>
+                <h3 class="receita-titulo">Brigadeiro Tradicional</h3>
+                <div class="receita-meta">
+                  <span><i class="far fa-clock"></i> 20 min</span>
+                  <span><i class="far fa-user"></i> 15 unidades</span>
+                </div>
+                <div class="receita-autor">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    alt="Autor"
+                  />
+                  <span>Maria Silva</span>
+                </div>
+              </div>
+            </a>
+            <a href="pudim-leite-condensado.html" class="receita-card">
+              <div class="receita-img">
+                <img
+                  src="img/pudim-leite-condensado.avif"
+                  alt="Pudim de Leite Condensado"
+                />
+              </div>
+              <div class="receita-info">
+                <span class="receita-categoria">Sobremesas</span>
+                <h3 class="receita-titulo">Pudim de Leite Condensado</h3>
+                <div class="receita-meta">
+                  <span><i class="far fa-clock"></i> 1h15</span>
+                  <span><i class="far fa-user"></i> 8 pessoas</span>
+                </div>
+                <div class="receita-autor">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    alt="Autor"
+                  />
+                  <span>Maria Silva</span>
+                </div>
+              </div>
+            </a>
+            <a href="bolo-banana-aveia.html" class="receita-card">
+              <div class="receita-img">
+                <img
+                  src="img/bolo-banana-aveia.webp"
+                  alt="Bolo de Banana com Aveia"
+                />
+              </div>
+              <div class="receita-info">
+                <span class="receita-categoria">Sobremesas</span>
+                <h3 class="receita-titulo">Bolo de Banana com Aveia</h3>
+                <div class="receita-meta">
+                  <span><i class="far fa-clock"></i> 50 min</span>
+                  <span><i class="far fa-user"></i> 10 fatias</span>
+                </div>
+                <div class="receita-autor">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    alt="Autor"
+                  />
+                  <span>Maria Silva</span>
+                </div>
+              </div>
+            </a>
+            <a href="salada-frutas-iogurte-mel.html" class="receita-card">
+              <div class="receita-img">
+                <img
+                  src="img/salada-frutas-iogurte-mel.jpg"
+                  alt="Salada de Frutas com Iogurte e Mel"
+                />
+              </div>
+              <div class="receita-info">
+                <span class="receita-categoria">Sobremesas</span>
+                <h3 class="receita-titulo">
+                  Salada de Frutas com Iogurte e Mel
+                </h3>
+                <div class="receita-meta">
+                  <span><i class="far fa-clock"></i> 15 min</span>
+                  <span><i class="far fa-user"></i> 4 pessoas</span>
+                </div>
+                <div class="receita-autor">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    alt="Autor"
+                  />
+                  <span>Maria Silva</span>
+                </div>
+              </div>
+            </a>
+            <a href="lasanha-abobrinha-ricota.html" class="receita-card">
+              <div class="receita-img">
+                <img
+                  src="img/lasanha-com-abobrinha-ricota.jpg"
+                  alt="Lasanha de Abobrinha com Ricota"
+                />
+              </div>
+              <div class="receita-info">
+                <span class="receita-categoria">Vegetariano</span>
+                <h3 class="receita-titulo">Lasanha de Abobrinha com Ricota</h3>
+                <div class="receita-meta">
+                  <span><i class="far fa-clock"></i> 50 min</span>
+                  <span><i class="far fa-user"></i> 4 pessoas</span>
+                </div>
+                <div class="receita-autor">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    alt="Autor"
+                  />
+                  <span>Maria Silva</span>
+                </div>
+              </div>
+            </a>
+            <a href="curry-grao-bico.html" class="receita-card">
+              <div class="receita-img">
+                <img
+                  src="img/curry-grao-bico.jpg"
+                  alt="Curry de Grão-de-Bico"
+                />
+              </div>
+              <div class="receita-info">
+                <span class="receita-categoria">Vegetariano</span>
+                <h3 class="receita-titulo">Curry de Grão-de-Bico</h3>
+                <div class="receita-meta">
+                  <span><i class="far fa-clock"></i> 40 min</span>
+                  <span><i class="far fa-user"></i> 4 pessoas</span>
+                </div>
+                <div class="receita-autor">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    alt="Autor"
+                  />
+                  <span>Maria Silva</span>
+                </div>
+              </div>
+            </a>
+            <a
+              href="escondidinho-batata-doce-legumes.html"
+              class="receita-card"
+            >
+              <div class="receita-img">
+                <img
+                  src="img/escondidinho-batata-doce-legumes.jpg"
+                  alt="Escondidinho de Batata-Doce com Legumes"
+                />
+              </div>
+              <div class="receita-info">
+                <span class="receita-categoria">Vegetariano</span>
+                <h3 class="receita-titulo">
+                  Escondidinho de Batata-Doce com Legumes
+                </h3>
+                <div class="receita-meta">
+                  <span><i class="far fa-clock"></i> 45 min</span>
+                  <span><i class="far fa-user"></i> 4 pessoas</span>
+                </div>
+                <div class="receita-autor">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    alt="Autor"
+                  />
+                  <span>Maria Silva</span>
+                </div>
+              </div>
+            </a>
+            <a href="hamburguer-lentilha.html" class="receita-card">
+              <div class="receita-img">
+                <img
+                  src="img/hamburguer-lentilha.jpg"
+                  alt="Hambúrguer de Lentilha"
+                />
+              </div>
+              <div class="receita-info">
+                <span class="receita-categoria">Vegetariano</span>
+                <h3 class="receita-titulo">Hambúrguer de Lentilha</h3>
+                <div class="receita-meta">
+                  <span><i class="far fa-clock"></i> 35 min</span>
+                  <span><i class="far fa-user"></i> 4 hambúrgueres</span>
+                </div>
+                <div class="receita-autor">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    alt="Autor"
+                  />
+                  <span>Maria Silva</span>
+                </div>
+              </div>
+            </a>
+            <a href="tabule.html" class="receita-card">
+              <div class="receita-img">
+                <img src="img/tabule.jpg" alt="Tabule (Salada Árabe)" />
+              </div>
+              <div class="receita-info">
+                <span class="receita-categoria">Vegetariano</span>
+                <h3 class="receita-titulo">Tabule (Salada Árabe)</h3>
+                <div class="receita-meta">
+                  <span><i class="far fa-clock"></i> 25 min</span>
+                  <span><i class="far fa-user"></i> 4 pessoas</span>
+                </div>
+                <div class="receita-autor">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    alt="Autor"
+                  />
+                  <span>Maria Silva</span>
+                </div>
+              </div>
+            </a>
+            <a href="pao-de-queijo-mineiro.html" class="receita-card">
+              <div class="receita-img">
+                <img
+                  src="img/pao-de-queijo-mineiro.webp"
+                  alt="Pão de Queijo Mineiro"
+                />
+              </div>
+              <div class="receita-info">
+                <span class="receita-categoria">Lanches</span>
+                <h3 class="receita-titulo">Pão de Queijo Mineiro</h3>
+                <div class="receita-meta">
+                  <span><i class="far fa-clock"></i> 40 min</span>
+                  <span><i class="far fa-user"></i> 25 unidades pequenas</span>
+                </div>
+                <div class="receita-autor">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    alt="Autor"
+                  />
+                  <span>Maria Silva</span>
+                </div>
+              </div>
+            </a>
+            <a href="sanduiche-natural-frango.html" class="receita-card">
+              <div class="receita-img">
+                <img
+                  src="img/sanduiche-natural-frango.webp"
+                  alt="Sanduíche Natural de Frango"
+                />
+              </div>
+              <div class="receita-info">
+                <span class="receita-categoria">Lanches</span>
+                <h3 class="receita-titulo">Sanduíche Natural de Frango</h3>
+                <div class="receita-meta">
+                  <span><i class="far fa-clock"></i> 20 min</span>
+                  <span><i class="far fa-user"></i> 2 sanduíches</span>
+                </div>
+                <div class="receita-autor">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    alt="Autor"
+                  />
+                  <span>Maria Silva</span>
+                </div>
+              </div>
+            </a>
+            <a href="tapioca-queijo-tomate.html" class="receita-card">
+              <div class="receita-img">
+                <img
+                  src="img/tapioca-queijo-tomate.jpg"
+                  alt="Tapioca com Queijo e Tomate"
+                />
+              </div>
+              <div class="receita-info">
+                <span class="receita-categoria">Lanches</span>
+                <h3 class="receita-titulo">Tapioca com Queijo e Tomate</h3>
+                <div class="receita-meta">
+                  <span><i class="far fa-clock"></i> 10 min</span>
+                  <span><i class="far fa-user"></i> 1 pessoa</span>
+                </div>
+                <div class="receita-autor">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    alt="Autor"
+                  />
+                  <span>Maria Silva</span>
+                </div>
+              </div>
+            </a>
+            <a href="wrap-vegetariano.html" class="receita-card">
+              <div class="receita-img">
+                <img src="img/wrap-vegetariano.jpg" alt="Wrap Vegetariano" />
+              </div>
+              <div class="receita-info">
+                <span class="receita-categoria">Lanches</span>
+                <h3 class="receita-titulo">Wrap Vegetariano</h3>
+                <div class="receita-meta">
+                  <span><i class="far fa-clock"></i> 15 min</span>
+                  <span><i class="far fa-user"></i> 2 wraps</span>
+                </div>
+                <div class="receita-autor">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    alt="Autor"
+                  />
+                  <span>Maria Silva</span>
+                </div>
+              </div>
+            </a>
+            <a href="bolinho-chuva-assado.html" class="receita-card">
+              <div class="receita-img">
+                <img
+                  src="img/bolinho-chuva-assado.jpg"
+                  alt="Bolinho de Chuva Assado"
+                />
+              </div>
+              <div class="receita-info">
+                <span class="receita-categoria">Lanches</span>
+                <h3 class="receita-titulo">Bolinho de Chuva Assado</h3>
+                <div class="receita-meta">
+                  <span><i class="far fa-clock"></i> 30 min</span>
+                  <span><i class="far fa-user"></i> 12 unidades</span>
+                </div>
+                <div class="receita-autor">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    alt="Autor"
+                  />
+                  <span>Maria Silva</span>
+                </div>
+              </div>
+            </a>
+            <!-- Repetir mais cards aqui -->
+          </div>
+          <div class="paginacao">
+            <button class="pag-btn"><i class="fas fa-chevron-left"></i></button>
+            <button class="pag-btn ativo">1</button>
+            <button class="pag-btn">2</button>
+            <button class="pag-btn">3</button>
+            <button class="pag-btn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h3>Sobre Nós</h3>
+            <p>
+              O Sabor Natural é dedicado a compartilhar receitas deliciosas e
+              saudáveis para todos os amantes da boa gastronomia.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-pinterest"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h3>Links Úteis</h3>
+            <ul class="footer-links">
+              <li><a href="sobre.html">Sobre Nós</a></li>
+              <li><a href="receitas.html">Receitas</a></li>
+              <li><a href="index.html#blog">Blog</a></li>
+              <li><a href="contato.html">Contato</a></li>
+              <li>
+                <a href="politicas-privacidade.html">Política de Privacidade</a>
+              </li>
+              <li><a href="termos-uso.html">Termos de Uso</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Contato</h3>
+            <ul class="footer-links">
+              <li><i class="fas fa-phone"></i> (11) 99999-9999</li>
+              <li><i class="fas fa-envelope"></i> contato@sabornatural.com</li>
+              <li><i class="fas fa-map-marker-alt"></i> São Paulo, SP</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 Jonathan R. Kalinoski. Todos os direitos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Sabor Natural</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-leaf"></i>
+                Sabor Natural
+            </a>
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                  <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                  <li class="nav-item"><a href="receitas.html" class="nav-link">Receitas</a></li>
+                  <li class="nav-item"><a href="index.html#blog" class="nav-link">Blog</a></li>
+                  <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                  <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+                  <li class="nav-item"><a href="cadastro.html" class="nav-link">Cadastrar</a></li>
+                </ul>
+              </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Formulário de Cadastro -->
+    <section class="contato-sectio">
+        <div class="container-cadastro">
+            <div class="contato-form-container">
+                <div class="form-header">
+                    <h2>Criar Conta</h2>
+                    <p>Preencha os campos abaixo para começar</p>
+                </div>
+                
+                <form action="#" method="POST" class="cadastro-form">
+                    <div class="form-grid">
+                        <div class="input-container">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="nome" name="nome" placeholder=" " required>
+                            <label for="nome">Nome</label>
+                        </div>
+
+                        <div class="input-container">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="sobrenome" name="sobrenome" placeholder=" " required>
+                            <label for="sobrenome">Sobrenome</label>
+                        </div>
+                    </div>
+
+                    <div class="input-container">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="email" name="email" placeholder=" " required>
+                        <label for="email">E-mail</label>
+                    </div>
+
+                    <div class="form-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div class="input-container">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="senha" name="senha" placeholder=" " required>
+                            <label for="senha">Senha</label>
+                        </div>
+
+                        <div class="input-container">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder=" " required>
+                            <label for="confirmar-senha">Confirmar Senha</label>
+                        </div>
+                    </div>
+
+                    <div class="input-container">
+                        <i class="fas fa-phone"></i>
+                        <input type="tel" id="telefone" name="telefone" placeholder=" " required>
+                        <label for="telefone">Telefone</label>
+                    </div>
+
+                    <div class="form-group" style="margin: 20px 0;">
+                        <label class="checkbox-container" style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+                            <input type="checkbox" required style="width: 18px; height: 18px;">
+                            <span style="color: #666;">Concordo com os <a href="termos-uso.html" style="color: var(--cor-primaria);">Termos de Uso</a> e <a href="politicas-privacidade.html" style="color: var(--cor-primaria);">Política de Privacidade</a></span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn-submit" style="margin-top: 20px;">
+                        <span>Criar Conta</span>
+                    </button>
+
+                    <div class="form-separator" style="margin: 30px 0; text-align: center; position: relative;">
+                        <span style="background: white; padding: 0 15px; color: #666; position: relative; z-index: 1;">ou continue com</span>
+                        <hr style="margin-top: -10px; border: none; border-top: 1px solid #eee;">
+                    </div>
+
+                    <div class="social-login" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                        <button type="button" class="social-btn" style="display: flex; align-items: center; justify-content: center; gap: 10px; padding: 12px; border: 1px solid #eee; border-radius: 8px; background: white; cursor: pointer; transition: all 0.3s;">
+                            <i class="fab fa-google" style="color: #DB4437;"></i>
+                            <span>Google</span>
+                        </button>
+                        <button type="button" class="social-btn" style="display: flex; align-items: center; justify-content: center; gap: 10px; padding: 12px; border: 1px solid #eee; border-radius: 8px; background: white; cursor: pointer; transition: all 0.3s;">
+                            <i class="fab fa-facebook" style="color: #4267B2;"></i>
+                            <span>Facebook</span>
+                        </button>
+                    </div>
+
+                    <p style="text-align: center; margin-top: 20px; color: #666;">
+                        Já tem uma conta? <a href="login.html" style="color: var(--cor-primaria); font-weight: 600;">Faça login</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-col">
+              <h3>Sobre Nós</h3>
+              <p>
+                O Sabor Natural é dedicado a compartilhar receitas deliciosas e
+                saudáveis para todos os amantes da boa gastronomia.
+              </p>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+            <div class="footer-col">
+              <h3>Links Úteis</h3>
+              <ul class="footer-links">
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="receitas.html">Receitas</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="politicas-privacidade.html">Política de Privacidade</a></li>
+                <li><a href="termos-uso.html">Termos de Uso</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h3>Contato</h3>
+              <ul class="footer-links">
+                <li><i class="fas fa-phone"></i> (11) 99999-9999</li>
+                <li><i class="fas fa-envelope"></i> contato@sabornatural.com</li>
+                <li><i class="fas fa-map-marker-alt"></i> São Paulo, SP</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2025 Jonathan R. Kalinoski. Todos os direitos reservados.</p>
+          </div>
+        </div>
+      </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
